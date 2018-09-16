@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".InitActivity"
+    tools:layout_editor_absoluteY="25dp">
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="top|center_vertical|center_horizontal"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toTopOf="parent"
+        app:layout_constraintEnd_toStartOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <Space
+            android:layout_width="wrap_content"
+            android:layout_height="30dp" />
+
+        <Button
+            android:id="@+id/btVideoView"
+            style="@android:style/Widget.Button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="VideoView"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="24sp" />
+
+        <Space
+            android:layout_width="wrap_content"
+            android:layout_height="10dp" />
+
+        <Button
+            android:id="@+id/btMediaPlayer"
+            style="@android:style/Widget.Button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="MediaPlayer"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="24sp"
+            tools:text="MediaPlayer" />
+
+        <Space
+            android:layout_width="wrap_content"
+            android:layout_height="10dp" />
+
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>
